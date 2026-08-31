@@ -64,5 +64,30 @@ AI-Job-Hunter/
 └── requirements.txt # Python dependencies
 ```
 
+## Project Demo
+
+https://github.com/user-attachments/assets/963d1b25-292c-42d7-bfe4-a1d6434a0b52
+
+## Limitations & Future Improvements
+
+### Current Limitations
+
+* 🌐 **External Job-Source Dependency** — Job availability and data quality depend on the external job sources and APIs used by the application.
+* 📝 **Job Description Formatting** — Some job descriptions may contain HTML elements from the source, which can occasionally affect how the description is displayed.
+* 🧩 **Skill-Based Matching** — Resume–job matching primarily relies on identifiable skills and requirements extracted from the resume and job description, so some contextual qualifications may not be captured.
+* 🔄 **Local Execution** — The current version is designed to run locally and requires the application environment and API credentials to be available.
+
+### Future Improvements
+
+* 🧹 Improve HTML sanitization and job-description formatting.
+* 🤖 Implement more advanced NLP/AI-based resume–job matching.
+* 📊 Introduce more detailed match explanations and ranking factors.
+* 🔔 Add automated job alerts and scheduled searches.
+* ☁️ Deploy the bot to a cloud environment for continuous availability.
+* 🗂️ Add additional job sources and improve duplicate detection.
+
+
+
+
 
   
