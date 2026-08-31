@@ -13,8 +13,8 @@ The bot collects the candidate's opportunity preference, job role, preferred loc
 The bot also extracts relevant skills from the candidate's resume and compares them with the skills and requirements identified in each job description. It calculates an overall match score, displays matching skills, highlights missing requirements, removes duplicate listings, and ranks relevant opportunities based on their match score.
 
 This provides candidates with a more structured way to discover relevant opportunities and assess their suitability before applying.
-## Key Features
 
+## Key Features
 * 🔎 **Multi-Source Job Search** — Retrieves job opportunities from Adzuna, Himalayas, and Jooble.
 * 🎯 **Opportunity & Experience Filtering** — Supports internships, fresher/entry-level roles, and experienced roles across different experience ranges.
 * 📍 **Location-Based Search** — Searches for opportunities based on the candidate's preferred location.
@@ -26,3 +26,43 @@ This provides candidates with a more structured way to discover relevant opportu
 * 📈 **Relevance Ranking** — Ranks filtered opportunities from highest to lowest match score.
 * 🔗 **Job Application Links** — Provides direct links to the available job listings.
 * 🛡️ **Error Handling** — Provides user-friendly feedback when unexpected errors occur.
+
+## Technology Stack
+* **Python** — Core programming language and application logic
+* **Python-Telegram-Bot** — Telegram bot development and user interaction
+* **PyMuPDF** — PDF resume text extraction
+* **Requests** — API requests and job data retrieval
+* **Adzuna API** — Job listing source
+* **Himalayas Jobs API** — Job listing source
+* **Jooble API** — Job listing source
+* **python-dotenv** — Secure management of API credentials and environment variables
+* **Regular Expressions (Regex)** — Experience and requirement pattern detection
+
+## How It Works
+1. **Select Opportunity Type** — Choose an internship, fresher/entry-level role, or experienced role based on experience level.
+2. **Enter Job Role** — Specify the type of job you are looking for.
+3. **Specify Location** — Enter the preferred job location.
+4. **Upload Resume** — Upload the resume as a PDF file.
+5. **Extract Resume Skills** — The bot extracts text from the resume and identifies relevant skills.
+6. **Search Multiple Job Sources** — Retrieves job listings from Adzuna, Himalayas, and Jooble.
+7. **Filter Opportunities** — Filters listings based on job role, opportunity type, location, and experience requirements.
+8. **Match Resume with Jobs** — Compares skills identified in the resume with relevant skills found in each job description.
+9. **Calculate Match Scores** — Calculates an overall percentage match based on the identified skill overlap.
+10. **Identify Missing Requirements** — Highlights relevant requirements that are not identified in the resume.
+11. **Remove Duplicates** — Removes duplicate listings using job URLs.
+12. **Rank Results** — Sorts opportunities from highest to lowest match score.
+13. **Display Results** — Presents the job title, company, location, match scores, matching skills, missing requirements, job description, and application link.
+
+## Project Structure
+```text
+AI-Job-Hunter/
+│
+├── bot.py          # Main Telegram bot application
+├── .gitignore      # Prevents sensitive and unnecessary files from being committed
+├── .env            # Local environment variables (not committed to GitHub)
+├── README.md       # Project documentation
+└── requirements.txt # Python dependencies
+```
+
+
+  
